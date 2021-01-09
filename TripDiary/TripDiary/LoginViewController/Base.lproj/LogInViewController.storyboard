@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rW6-tn-eoz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="TripDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-NL-JlK">
+                                <rect key="frame" x="0.0" y="163" width="414" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="열심히 일 한 당신 떠나요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37f-lA-7TO">
+                                <rect key="frame" x="0.0" y="267" width="414" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49P-cK-Fef">
+                                <rect key="frame" x="30" y="417" width="354" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="rRx-1m-2ro"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.25490196078431371" green="0.74117647058823533" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbw-PQ-81n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfw-Zt-L05">
+                                <rect key="frame" x="30" y="488" width="354" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Fyw-nw-x5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.74117647060000003" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paC-lx-tVU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ8-pE-3tY">
+                                <rect key="frame" x="42" y="580.5" width="353.5" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="XJn-zg-BTj"/>
+                                </constraints>
+                                <string key="text">본 서비스는 여행기의 내용을 회원끼리
+공유하는 서비스 입니다. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_warnning" translatesAutoresizingMaskIntoConstraints="NO" id="01C-W5-Mh0">
+                                <rect key="frame" x="30" y="580.5" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="0uV-IX-DOF"/>
+                                    <constraint firstAttribute="width" secondItem="01C-W5-Mh0" secondAttribute="height" multiplier="1:1" id="L0l-3i-Qar"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.32156862745098036" green="0.71372549019607845" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfw-Zt-L05" secondAttribute="trailing" constant="30" id="4cb-ND-4ZA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="49P-cK-Fef" secondAttribute="trailing" constant="30" id="5Uk-kO-hyR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AJ8-pE-3tY" secondAttribute="trailing" constant="18.75" id="66m-pJ-mlj"/>
+                            <constraint firstItem="49P-cK-Fef" firstAttribute="top" secondItem="37f-lA-7TO" secondAttribute="bottom" constant="130" id="D04-ei-H2A"/>
+                            <constraint firstItem="37f-lA-7TO" firstAttribute="top" secondItem="rsH-NL-JlK" secondAttribute="bottom" constant="2" id="FVB-gM-3pO"/>
+                            <constraint firstItem="01C-W5-Mh0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GAR-FO-Hhp"/>
+                            <constraint firstItem="rsH-NL-JlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GIM-0X-LrS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="37f-lA-7TO" secondAttribute="trailing" id="QdR-a5-hYu"/>
+                            <constraint firstItem="49P-cK-Fef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Rhi-4l-rbP"/>
+                            <constraint firstItem="AJ8-pE-3tY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41.75" id="SdD-Hc-eHE"/>
+                            <constraint firstItem="AJ8-pE-3tY" firstAttribute="top" secondItem="Kfw-Zt-L05" secondAttribute="bottom" constant="45.5" id="VK8-bu-Q5b"/>
+                            <constraint firstItem="Kfw-Zt-L05" firstAttribute="top" secondItem="49P-cK-Fef" secondAttribute="bottom" constant="24" id="XSZ-L5-Ptj"/>
+                            <constraint firstItem="Kfw-Zt-L05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aIE-Y1-p00"/>
+                            <constraint firstItem="01C-W5-Mh0" firstAttribute="top" secondItem="AJ8-pE-3tY" secondAttribute="top" id="fqo-OS-aJy"/>
+                            <constraint firstItem="37f-lA-7TO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kmi-Ns-S0t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rsH-NL-JlK" secondAttribute="trailing" id="q0p-iY-lD4"/>
+                            <constraint firstItem="rsH-NL-JlK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="vq9-U7-dC8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XTP-9n-tvz"/>
+                    <connections>
+                        <outlet property="logInButton" destination="49P-cK-Fef" id="6Qc-4t-z2Q"/>
+                        <outlet property="signUpButton" destination="Kfw-Zt-L05" id="WAc-ER-nnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ftt-eo-pV6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rW6-tn-eoz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="252-LW-6bB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vEz-hV-62U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yC-ju-Zgg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_warnning" width="18" height="18"/>
+    </resources>
+</document>
