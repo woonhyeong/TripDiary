@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7525A8D122001E5D89 /* AppDelegate.swift */; };
 		9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7725A8D122001E5D89 /* SceneDelegate.swift */; };
-		9519CF7A25A8D122001E5D89 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7925A8D122001E5D89 /* LogInViewController.swift */; };
-		9519CF7D25A8D122001E5D89 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF7B25A8D122001E5D89 /* LogInViewController.storyboard */; };
+		9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7925A8D122001E5D89 /* MainViewController.swift */; };
+		9519CF7D25A8D122001E5D89 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */; };
 		9519CF7F25A8D125001E5D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF7E25A8D125001E5D89 /* Assets.xcassets */; };
 		9519CF8225A8D125001E5D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */; };
 		9519CF8D25A8D125001E5D89 /* TripDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF8C25A8D125001E5D89 /* TripDiaryTests.swift */; };
@@ -38,8 +38,8 @@
 		9519CF7225A8D122001E5D89 /* TripDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9519CF7525A8D122001E5D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9519CF7725A8D122001E5D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9519CF7925A8D122001E5D89 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		9519CF7C25A8D122001E5D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LogInViewController.storyboard; sourceTree = "<group>"; };
+		9519CF7925A8D122001E5D89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9519CF7C25A8D122001E5D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		9519CF7E25A8D125001E5D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9519CF8125A8D125001E5D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9519CF8325A8D125001E5D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		9519CF7425A8D122001E5D89 /* TripDiary */ = {
 			isa = PBXGroup;
 			children = (
-				954ABADE25AA0A33008AC129 /* LoginViewController */,
+				954ABADE25AA0A33008AC129 /* LogIn */,
 				954ABADD25AA0A24008AC129 /* App */,
 				954ABADC25AA0A17008AC129 /* Resource */,
 				9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */,
@@ -143,13 +143,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		954ABADE25AA0A33008AC129 /* LoginViewController */ = {
+		954ABADE25AA0A33008AC129 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
-				9519CF7925A8D122001E5D89 /* LogInViewController.swift */,
-				9519CF7B25A8D122001E5D89 /* LogInViewController.storyboard */,
+				9519CF7925A8D122001E5D89 /* MainViewController.swift */,
+				9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */,
 			);
-			path = LoginViewController;
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +257,7 @@
 			files = (
 				9519CF8225A8D125001E5D89 /* LaunchScreen.storyboard in Resources */,
 				9519CF7F25A8D125001E5D89 /* Assets.xcassets in Resources */,
-				9519CF7D25A8D122001E5D89 /* LogInViewController.storyboard in Resources */,
+				9519CF7D25A8D122001E5D89 /* MainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9519CF7A25A8D122001E5D89 /* LogInViewController.swift in Sources */,
+				9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */,
 				9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */,
 				9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */,
 			);
@@ -320,12 +320,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9519CF7B25A8D122001E5D89 /* LogInViewController.storyboard */ = {
+		9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9519CF7C25A8D122001E5D89 /* Base */,
 			);
-			name = LogInViewController.storyboard;
+			name = MainViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */ = {

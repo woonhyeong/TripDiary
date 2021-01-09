@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  MainViewController.swift
 //  TripDiary
 //
 //  Created by 이운형 on 2021/01/09.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class MainViewController: UIViewController {
     // MARK: - UI Properties
     @IBOutlet private weak var logInButton: UIButton!
     @IBOutlet private weak var signUpButton: UIButton!
@@ -33,7 +33,7 @@ class LogInViewController: UIViewController {
     }
 }
 
-extension LogInViewController {
+extension MainViewController {
     private func setupUI() {
         logInButton.layer.cornerRadius = 14.0
         signUpButton.layer.cornerRadius = 14.0
