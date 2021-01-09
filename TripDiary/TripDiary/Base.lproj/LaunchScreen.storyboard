@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_background" translatesAutoresizingMaskIntoConstraints="NO" id="tnr-11-bxy">
+                                <rect key="frame" x="-194" y="412" width="967.5" height="484"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tnr-11-bxy" secondAttribute="height" multiplier="2:1" id="dIM-3j-hDe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1R-4t-fbg">
+                                <rect key="frame" x="0.0" y="119" width="414" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="열심히 일 한 당신 떠나요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-3b-Q1Y">
+                                <rect key="frame" x="0.0" y="222.5" width="414" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.32156862745098036" green="0.71372549019607845" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gne-3b-Q1Y" secondAttribute="trailing" id="EyL-4q-MoT"/>
+                            <constraint firstItem="tnr-11-bxy" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.54" id="H0C-b1-fGV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i1R-4t-fbg" secondAttribute="trailing" id="Kss-nL-zj5"/>
+                            <constraint firstItem="Gne-3b-Q1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zph-pM-7qj"/>
+                            <constraint firstItem="tnr-11-bxy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.4" id="cAX-XT-pCT"/>
+                            <constraint firstItem="Gne-3b-Q1Y" firstAttribute="top" secondItem="i1R-4t-fbg" secondAttribute="bottom" constant="2" id="ec4-Nr-bVK"/>
+                            <constraint firstItem="i1R-4t-fbg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="f6b-4n-4lb"/>
+                            <constraint firstItem="i1R-4t-fbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hNW-3S-c6k"/>
+                            <constraint firstAttribute="bottom" secondItem="tnr-11-bxy" secondAttribute="bottom" id="jSy-xu-gur"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_background" width="915" height="459"/>
+    </resources>
+</document>
