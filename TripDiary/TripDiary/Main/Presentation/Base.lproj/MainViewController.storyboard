@@ -3,12 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="NanumGothic.ttf">
-            <string>NanumGothic</string>
+        <array key="NanumGothicBold.ttf">
+            <string>NanumGothicBold</string>
         </array>
         <array key="NanumSquare_acR.ttf">
             <string>NanumSquare_acR</string>
@@ -24,24 +25,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-NL-JlK">
-                                <rect key="frame" x="0.0" y="163" width="414" height="98"/>
-                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="85"/>
+                                <rect key="frame" x="0.0" y="163" width="414" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="열심히 일 한 당신 떠나요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37f-lA-7TO">
-                                <rect key="frame" x="0.0" y="263" width="414" height="18.5"/>
-                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="16"/>
+                                <rect key="frame" x="0.0" y="266.5" width="414" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49P-cK-Fef">
-                                <rect key="frame" x="30" y="411.5" width="354" height="47"/>
+                                <rect key="frame" x="30" y="415.5" width="354" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="rRx-1m-2ro"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="20"/>
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" red="0.25490196078431371" green="0.74117647058823533" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -50,12 +51,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfw-Zt-L05">
-                                <rect key="frame" x="30" y="482.5" width="354" height="47"/>
+                                <rect key="frame" x="30" y="486.5" width="354" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Fyw-nw-x5W"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="20"/>
                                 <state key="normal" title="회원가입">
                                     <color key="titleColor" red="0.25490196079999999" green="0.74117647060000003" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -64,7 +65,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ8-pE-3tY">
-                                <rect key="frame" x="42" y="575" width="353.5" height="46"/>
+                                <rect key="frame" x="42" y="579" width="353.5" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="XJn-zg-BTj"/>
                                 </constraints>
@@ -75,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_warnning" translatesAutoresizingMaskIntoConstraints="NO" id="01C-W5-Mh0">
-                                <rect key="frame" x="30" y="575" width="18" height="18"/>
+                                <rect key="frame" x="30" y="585" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="0uV-IX-DOF"/>
                                     <constraint firstAttribute="width" secondItem="01C-W5-Mh0" secondAttribute="height" multiplier="1:1" id="L0l-3i-Qar"/>
@@ -83,7 +84,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.32156862745098036" green="0.71372549019607845" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="mainGreen"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfw-Zt-L05" secondAttribute="trailing" constant="30" id="4cb-ND-4ZA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="49P-cK-Fef" secondAttribute="trailing" constant="30" id="5Uk-kO-hyR"/>
@@ -98,7 +99,7 @@
                             <constraint firstItem="AJ8-pE-3tY" firstAttribute="top" secondItem="Kfw-Zt-L05" secondAttribute="bottom" constant="45.5" id="VK8-bu-Q5b"/>
                             <constraint firstItem="Kfw-Zt-L05" firstAttribute="top" secondItem="49P-cK-Fef" secondAttribute="bottom" constant="24" id="XSZ-L5-Ptj"/>
                             <constraint firstItem="Kfw-Zt-L05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aIE-Y1-p00"/>
-                            <constraint firstItem="01C-W5-Mh0" firstAttribute="top" secondItem="AJ8-pE-3tY" secondAttribute="top" id="fqo-OS-aJy"/>
+                            <constraint firstItem="01C-W5-Mh0" firstAttribute="top" secondItem="AJ8-pE-3tY" secondAttribute="top" constant="6" id="fqo-OS-aJy"/>
                             <constraint firstItem="37f-lA-7TO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kmi-Ns-S0t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rsH-NL-JlK" secondAttribute="trailing" id="q0p-iY-lD4"/>
                             <constraint firstItem="rsH-NL-JlK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="vq9-U7-dC8"/>
@@ -135,5 +136,8 @@
     </scenes>
     <resources>
         <image name="login_warnning" width="18" height="18"/>
+        <namedColor name="mainGreen">
+            <color red="0.32199999690055847" green="0.71399998664855957" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

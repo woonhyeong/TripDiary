@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,20 +28,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1R-4t-fbg">
-                                <rect key="frame" x="0.0" y="119" width="414" height="98"/>
-                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="85"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
                                 <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="열심히 일 한 당신 떠나요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-3b-Q1Y">
-                                <rect key="frame" x="0.0" y="219" width="414" height="18.5"/>
+                                <rect key="frame" x="0.0" y="222.5" width="414" height="19"/>
                                 <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.32156862745098036" green="0.71372549019607845" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="mainGreen"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gne-3b-Q1Y" secondAttribute="trailing" id="EyL-4q-MoT"/>
                             <constraint firstItem="tnr-11-bxy" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.54" id="H0C-b1-fGV"/>
@@ -61,5 +62,8 @@
     </scenes>
     <resources>
         <image name="launch_background" width="915" height="459"/>
+        <namedColor name="mainGreen">
+            <color red="0.32199999690055847" green="0.71399998664855957" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0gs-i2-b1L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="HD9-Ho-LRx">
+            <objects>
+                <viewController id="0gs-i2-b1L" customClass="LogInViewController" customModule="TripDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAw-1P-okg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-tu-TOG">
+                                <rect key="frame" x="32" y="191" width="350" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="jV8-7f-Cry"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVp-Nt-oxY">
+                                <rect key="frame" x="32" y="419.5" width="350" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6V8-8a-gE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" red="0.32156862745098036" green="0.71372549019607845" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-hp-XtI">
+                                <rect key="frame" x="300" y="329.5" width="82" height="30"/>
+                                <state key="normal" title="비밀번호 찾기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Xb-lC-1vF"/>
+                        <color key="backgroundColor" name="mainGreen"/>
+                        <constraints>
+                            <constraint firstItem="wVp-Nt-oxY" firstAttribute="top" secondItem="7G0-hp-XtI" secondAttribute="bottom" constant="60" id="DTU-7S-hfz"/>
+                            <constraint firstItem="qTf-tu-TOG" firstAttribute="top" secondItem="1Xb-lC-1vF" secondAttribute="top" constant="147" id="Dgg-OC-ivy"/>
+                            <constraint firstItem="7G0-hp-XtI" firstAttribute="top" secondItem="qTf-tu-TOG" secondAttribute="bottom" constant="6.5" id="NgN-RE-ZkL"/>
+                            <constraint firstItem="7G0-hp-XtI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Xb-lC-1vF" secondAttribute="leading" priority="900" id="Qqi-QG-8T8"/>
+                            <constraint firstItem="qTf-tu-TOG" firstAttribute="leading" secondItem="1Xb-lC-1vF" secondAttribute="leading" constant="32" id="c8K-ZH-rnY"/>
+                            <constraint firstAttribute="trailing" secondItem="wVp-Nt-oxY" secondAttribute="trailing" constant="32" id="dGL-Um-NQa"/>
+                            <constraint firstItem="wVp-Nt-oxY" firstAttribute="leading" secondItem="NAw-1P-okg" secondAttribute="leading" constant="32" id="dNj-6s-nrx"/>
+                            <constraint firstItem="1Xb-lC-1vF" firstAttribute="trailing" secondItem="7G0-hp-XtI" secondAttribute="trailing" constant="32" id="lDi-te-9ZB"/>
+                            <constraint firstItem="1Xb-lC-1vF" firstAttribute="trailing" secondItem="qTf-tu-TOG" secondAttribute="trailing" constant="32" id="qWJ-EI-Lex"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="wVp-Nt-oxY" id="BPx-rW-5hf"/>
+                        <outlet property="findPasswordButton" destination="7G0-hp-XtI" id="Vyu-dd-f24"/>
+                        <outlet property="stackView" destination="qTf-tu-TOG" id="3T4-w5-YIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7y-uu-q9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainGreen">
+            <color red="0.32199999690055847" green="0.71399998664855957" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OQ6-Lo-qcQ" customClass="LogInTextFieldView" customModule="TripDiary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserID" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UEJ-IF-quu">
+                    <rect key="frame" x="0.0" y="0.0" width="353" height="126"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-qR-cnN">
+                    <rect key="frame" x="0.0" y="126" width="353" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Gi8-7I-ZYn"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="올바른 비밀번호를 입력하세요." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKK-UF-W0q">
+                    <rect key="frame" x="0.0" y="134" width="353" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="xFf-fC-7wi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="oTy-Ny-lAi"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LdR-qR-cnN" firstAttribute="top" secondItem="UEJ-IF-quu" secondAttribute="bottom" id="60C-Dj-0ex"/>
+                <constraint firstItem="UEJ-IF-quu" firstAttribute="top" secondItem="OQ6-Lo-qcQ" secondAttribute="top" id="70l-nN-cDl"/>
+                <constraint firstAttribute="trailing" secondItem="UEJ-IF-quu" secondAttribute="trailing" id="9IW-g5-4eN"/>
+                <constraint firstAttribute="trailing" secondItem="cKK-UF-W0q" secondAttribute="trailing" id="CRR-ME-3B5"/>
+                <constraint firstAttribute="trailing" secondItem="LdR-qR-cnN" secondAttribute="trailing" id="RmE-uM-OW6"/>
+                <constraint firstItem="cKK-UF-W0q" firstAttribute="top" secondItem="LdR-qR-cnN" secondAttribute="bottom" constant="7" id="aSs-IY-x20"/>
+                <constraint firstItem="UEJ-IF-quu" firstAttribute="leading" secondItem="OQ6-Lo-qcQ" secondAttribute="leading" id="d1l-Yk-rDY"/>
+                <constraint firstItem="cKK-UF-W0q" firstAttribute="leading" secondItem="OQ6-Lo-qcQ" secondAttribute="leading" id="dPw-9c-0ob"/>
+                <constraint firstItem="LdR-qR-cnN" firstAttribute="leading" secondItem="OQ6-Lo-qcQ" secondAttribute="leading" id="g5k-is-3bY"/>
+                <constraint firstAttribute="bottom" secondItem="cKK-UF-W0q" secondAttribute="bottom" id="tOa-J5-oEd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="guideLabel" destination="cKK-UF-W0q" id="qtF-0A-zqa"/>
+                <outlet property="separatorView" destination="LdR-qR-cnN" id="vgQ-hH-ayj"/>
+                <outlet property="textField" destination="UEJ-IF-quu" id="Dnb-8H-gew"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-419"/>
+        </view>
+    </objects>
+</document>

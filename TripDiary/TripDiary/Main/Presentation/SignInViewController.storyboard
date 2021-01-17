@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nJj-RP-URW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="FxY-Wi-fba">
+            <objects>
+                <viewController id="nJj-RP-URW" customClass="SignInViewController" customModule="TripDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcL-3m-FsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-Pt-fMd">
+                                <rect key="frame" x="32" y="191" width="350" height="204"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="4e5-zQ-RGt"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayQ-35-yNO">
+                                <rect key="frame" x="32" y="419.5" width="350" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BRR-Rv-ndK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" name="mainGreen"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mfw-eu-T8I"/>
+                        <color key="backgroundColor" name="mainGreen"/>
+                        <constraints>
+                            <constraint firstItem="mfw-eu-T8I" firstAttribute="trailing" secondItem="ayQ-35-yNO" secondAttribute="trailing" constant="32" id="4H0-cv-DpS"/>
+                            <constraint firstItem="Zo7-Pt-fMd" firstAttribute="leading" secondItem="bcL-3m-FsI" secondAttribute="leading" constant="32" id="Brc-fj-tmW"/>
+                            <constraint firstItem="ayQ-35-yNO" firstAttribute="top" secondItem="Zo7-Pt-fMd" secondAttribute="bottom" constant="24.5" id="jgc-vJ-eWa"/>
+                            <constraint firstItem="Zo7-Pt-fMd" firstAttribute="top" secondItem="mfw-eu-T8I" secondAttribute="top" constant="147" id="sZ0-kT-GtW"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo7-Pt-fMd" secondAttribute="trailing" constant="32" id="uIj-Sf-0Uv"/>
+                            <constraint firstItem="ayQ-35-yNO" firstAttribute="leading" secondItem="mfw-eu-T8I" secondAttribute="leading" constant="32" id="xtT-T4-Q0Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="ayQ-35-yNO" id="6Q2-dd-oFr"/>
+                        <outlet property="stackView" destination="Zo7-Pt-fMd" id="O66-MM-gdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VL-Hn-Cgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-52.232142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainGreen">
+            <color red="0.32199999690055847" green="0.71399998664855957" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
