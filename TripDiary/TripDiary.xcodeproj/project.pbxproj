@@ -16,6 +16,8 @@
 		9519CF8225A8D125001E5D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */; };
 		9519CF8D25A8D125001E5D89 /* TripDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF8C25A8D125001E5D89 /* TripDiaryTests.swift */; };
 		9519CF9825A8D125001E5D89 /* TripDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF9725A8D125001E5D89 /* TripDiaryUITests.swift */; };
+		9522DCF825B3E9CC00EF30F9 /* LogInReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9522DCF725B3E9CC00EF30F9 /* LogInReactor.swift */; };
+		9522DCFD25B3EAB700EF30F9 /* User+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9522DCFC25B3EAB700EF30F9 /* User+Response.swift */; };
 		9580AC4E25AF0BCA006035A9 /* InstantiableFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580AC4D25AF0BCA006035A9 /* InstantiableFromNib.swift */; };
 		9580AC5325B34A44006035A9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580AC5225B34A44006035A9 /* SignInViewController.swift */; };
 		9580AC5825B34A4D006035A9 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */; };
@@ -80,6 +82,8 @@
 		9519CF9325A8D125001E5D89 /* TripDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9519CF9725A8D125001E5D89 /* TripDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryUITests.swift; sourceTree = "<group>"; };
 		9519CF9925A8D125001E5D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9522DCF725B3E9CC00EF30F9 /* LogInReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInReactor.swift; sourceTree = "<group>"; };
+		9522DCFC25B3EAB700EF30F9 /* User+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Response.swift"; sourceTree = "<group>"; };
 		9580AC4D25AF0BCA006035A9 /* InstantiableFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiableFromNib.swift; sourceTree = "<group>"; };
 		9580AC5225B34A44006035A9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		954ABADE25AA0A33008AC129 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				95F4667D25B3DA3B009832E9 /* Entity */,
 				9580AC6625B34A81006035A9 /* Presentation */,
 			);
 			path = Main;
@@ -242,15 +247,12 @@
 		9580AC6625B34A81006035A9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				95E4D1B125AED40D00E6F237 /* SubViews */,
-				9519CF7925A8D122001E5D89 /* MainViewController.swift */,
-				9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */,
-				95CB233225AAA698008FDB6B /* LogInViewController.swift */,
-				95CB233A25AAA6A0008FDB6B /* LogInViewController.storyboard */,
-				9580AC5225B34A44006035A9 /* SignInViewController.swift */,
-				9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */,
-				9580AC5C25B34A62006035A9 /* FindPasswordViewController.swift */,
-				9580AC6125B34A6A006035A9 /* FindPasswordViewController.storyboard */,
+				95E4D1B125AED40D00E6F237 /* Common */,
+				95F4667925B3D6B9009832E9 /* Main */,
+				95F4667A25B3D6BE009832E9 /* LogIn */,
+				95F4667C25B3D6CF009832E9 /* FindPassword */,
+				95F4667B25B3D6C4009832E9 /* SignIn */,
+				9522DCF725B3E9CC00EF30F9 /* LogInReactor.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -305,13 +307,57 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
-		95E4D1B125AED40D00E6F237 /* SubViews */ = {
+		95E4D1B125AED40D00E6F237 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */,
 				95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */,
 			);
-			path = SubViews;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95F4667925B3D6B9009832E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9519CF7925A8D122001E5D89 /* MainViewController.swift */,
+				9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		95F4667A25B3D6BE009832E9 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				95CB233225AAA698008FDB6B /* LogInViewController.swift */,
+				95CB233A25AAA6A0008FDB6B /* LogInViewController.storyboard */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		95F4667B25B3D6C4009832E9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				9580AC5225B34A44006035A9 /* SignInViewController.swift */,
+				9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		95F4667C25B3D6CF009832E9 /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				9580AC5C25B34A62006035A9 /* FindPasswordViewController.swift */,
+				9580AC6125B34A6A006035A9 /* FindPasswordViewController.storyboard */,
+			);
+			path = FindPassword;
+			sourceTree = "<group>";
+		};
+		95F4667D25B3DA3B009832E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9522DCFC25B3EAB700EF30F9 /* User+Response.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,9 +613,11 @@
 			files = (
 				9580AC5325B34A44006035A9 /* SignInViewController.swift in Sources */,
 				95CB233325AAA698008FDB6B /* LogInViewController.swift in Sources */,
+				9522DCF825B3E9CC00EF30F9 /* LogInReactor.swift in Sources */,
 				9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */,
 				95E4D1B325AED45100E6F237 /* LogInTextFieldView.swift in Sources */,
 				9580AC5D25B34A62006035A9 /* FindPasswordViewController.swift in Sources */,
+				9522DCFD25B3EAB700EF30F9 /* User+Response.swift in Sources */,
 				9580AC4E25AF0BCA006035A9 /* InstantiableFromNib.swift in Sources */,
 				95E4D19525ADDBF500E6F237 /* TripDiary+Bundle.swift in Sources */,
 				95E4D1A225ADEB4C00E6F237 /* Color+named.swift in Sources */,

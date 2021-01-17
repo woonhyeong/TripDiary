@@ -6,9 +6,9 @@ target 'TripDiary' do
   use_frameworks!
 
   # Pods for TripDiary
-  pod 'RxSwift', '6.0.0'
-  pod 'RxCocoa', '6.0.0'
-  pod 'ReactorKit'
+  pod 'RxSwift', '~> 5.0'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'ReactorKit', '~> 2.0.0'
   pod 'Alamofire', '~> 5.2'
   
   target 'TripDiaryTests' do
