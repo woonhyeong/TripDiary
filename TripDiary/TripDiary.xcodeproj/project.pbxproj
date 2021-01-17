@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7053D6AA8CE4872E7CDCAE14 /* Pods_TripDiary_TripDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6D1D5F4F8BFF2E1322F3A /* Pods_TripDiary_TripDiaryUITests.framework */; };
 		9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7525A8D122001E5D89 /* AppDelegate.swift */; };
 		9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7725A8D122001E5D89 /* SceneDelegate.swift */; };
 		9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7925A8D122001E5D89 /* MainViewController.swift */; };
@@ -15,6 +16,11 @@
 		9519CF8225A8D125001E5D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */; };
 		9519CF8D25A8D125001E5D89 /* TripDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF8C25A8D125001E5D89 /* TripDiaryTests.swift */; };
 		9519CF9825A8D125001E5D89 /* TripDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF9725A8D125001E5D89 /* TripDiaryUITests.swift */; };
+		9580AC4E25AF0BCA006035A9 /* InstantiableFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580AC4D25AF0BCA006035A9 /* InstantiableFromNib.swift */; };
+		9580AC5325B34A44006035A9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580AC5225B34A44006035A9 /* SignInViewController.swift */; };
+		9580AC5825B34A4D006035A9 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */; };
+		9580AC5D25B34A62006035A9 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580AC5C25B34A62006035A9 /* FindPasswordViewController.swift */; };
+		9580AC6225B34A6A006035A9 /* FindPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580AC6125B34A6A006035A9 /* FindPasswordViewController.storyboard */; };
 		95CB233325AAA698008FDB6B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CB233225AAA698008FDB6B /* LogInViewController.swift */; };
 		95CB233B25AAA6A0008FDB6B /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CB233A25AAA6A0008FDB6B /* LogInViewController.storyboard */; };
 		95E4D17125AAAE3200E6F237 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D16D25AAAE2D00E6F237 /* NanumGothic.ttf */; };
@@ -25,6 +31,15 @@
 		95E4D18225AAAE3F00E6F237 /* NanumSquare_acB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D16C25AAADF600E6F237 /* NanumSquare_acB.ttf */; };
 		95E4D18325AAAE3F00E6F237 /* NanumSquare_acEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D16925AAADF500E6F237 /* NanumSquare_acEB.ttf */; };
 		95E4D18425AAAE3F00E6F237 /* NanumSquare_acL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D16A25AAADF500E6F237 /* NanumSquare_acL.ttf */; };
+		95E4D18D25ADDB3600E6F237 /* UIImage+asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D18C25ADDB3600E6F237 /* UIImage+asset.swift */; };
+		95E4D19525ADDBF500E6F237 /* TripDiary+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D19425ADDBF500E6F237 /* TripDiary+Bundle.swift */; };
+		95E4D19C25ADDFCF00E6F237 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D19B25ADDFCF00E6F237 /* StoryboardInstantiable.swift */; };
+		95E4D1A225ADEB4C00E6F237 /* Color+named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D1A125ADEB4C00E6F237 /* Color+named.swift */; };
+		95E4D1AA25ADEC0900E6F237 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D1A925ADEC0900E6F237 /* Colors.xcassets */; };
+		95E4D1B325AED45100E6F237 /* LogInTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */; };
+		95E4D1BB25AED46000E6F237 /* LogInTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */; };
+		E35BE82A57D2AB53FAE31FB2 /* Pods_TripDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2BFB35206D58385F62735E /* Pods_TripDiaryTests.framework */; };
+		EA5C7F78BCCE2D874F5E9830 /* Pods_TripDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A9456E4E38FEBD1B01410 /* Pods_TripDiary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06CE558479498045901CE44C /* Pods-TripDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary.release.xcconfig"; path = "Target Support Files/Pods-TripDiary/Pods-TripDiary.release.xcconfig"; sourceTree = "<group>"; };
+		351A19EDB6222E5ADA37B682 /* Pods-TripDiary-TripDiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary-TripDiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-TripDiary-TripDiaryUITests/Pods-TripDiary-TripDiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		393281B81D67C1102F6C4D49 /* Pods-TripDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-TripDiaryTests/Pods-TripDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C376C020B3C481003BDA29B /* Pods-TripDiary-TripDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary-TripDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-TripDiary-TripDiaryUITests/Pods-TripDiary-TripDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D2BFB35206D58385F62735E /* Pods_TripDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFA6C49EE4F4138C69807FF /* Pods-TripDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-TripDiaryTests/Pods-TripDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		9519CF7225A8D122001E5D89 /* TripDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9519CF7525A8D122001E5D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9519CF7725A8D122001E5D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +80,11 @@
 		9519CF9325A8D125001E5D89 /* TripDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9519CF9725A8D125001E5D89 /* TripDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryUITests.swift; sourceTree = "<group>"; };
 		9519CF9925A8D125001E5D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9580AC4D25AF0BCA006035A9 /* InstantiableFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiableFromNib.swift; sourceTree = "<group>"; };
+		9580AC5225B34A44006035A9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		9580AC5C25B34A62006035A9 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		9580AC6125B34A6A006035A9 /* FindPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindPasswordViewController.storyboard; sourceTree = "<group>"; };
 		95CB233225AAA698008FDB6B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		95CB233A25AAA6A0008FDB6B /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		95E4D16925AAADF500E6F237 /* NanumSquare_acEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquare_acEB.ttf; sourceTree = "<group>"; };
@@ -69,6 +95,16 @@
 		95E4D16E25AAAE2D00E6F237 /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
 		95E4D16F25AAAE2D00E6F237 /* NanumGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.ttf; sourceTree = "<group>"; };
 		95E4D17025AAAE2E00E6F237 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		95E4D18C25ADDB3600E6F237 /* UIImage+asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+asset.swift"; sourceTree = "<group>"; };
+		95E4D19425ADDBF500E6F237 /* TripDiary+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripDiary+Bundle.swift"; sourceTree = "<group>"; };
+		95E4D19B25ADDFCF00E6F237 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		95E4D1A125ADEB4C00E6F237 /* Color+named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+named.swift"; sourceTree = "<group>"; };
+		95E4D1A925ADEC0900E6F237 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTextFieldView.swift; sourceTree = "<group>"; };
+		95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInTextFieldView.xib; sourceTree = "<group>"; };
+		9D3A9456E4E38FEBD1B01410 /* Pods_TripDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10772474093C69AE5214908 /* Pods-TripDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary.debug.xcconfig"; path = "Target Support Files/Pods-TripDiary/Pods-TripDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C6D1D5F4F8BFF2E1322F3A /* Pods_TripDiary_TripDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiary_TripDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5C7F78BCCE2D874F5E9830 /* Pods_TripDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35BE82A57D2AB53FAE31FB2 /* Pods_TripDiaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +128,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7053D6AA8CE4872E7CDCAE14 /* Pods_TripDiary_TripDiaryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D0EF109FE1F06B70A7A90F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D10772474093C69AE5214908 /* Pods-TripDiary.debug.xcconfig */,
+				06CE558479498045901CE44C /* Pods-TripDiary.release.xcconfig */,
+				351A19EDB6222E5ADA37B682 /* Pods-TripDiary-TripDiaryUITests.debug.xcconfig */,
+				3C376C020B3C481003BDA29B /* Pods-TripDiary-TripDiaryUITests.release.xcconfig */,
+				393281B81D67C1102F6C4D49 /* Pods-TripDiaryTests.debug.xcconfig */,
+				7EFA6C49EE4F4138C69807FF /* Pods-TripDiaryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46A83A474C41A77CE7369CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A9456E4E38FEBD1B01410 /* Pods_TripDiary.framework */,
+				F6C6D1D5F4F8BFF2E1322F3A /* Pods_TripDiary_TripDiaryUITests.framework */,
+				6D2BFB35206D58385F62735E /* Pods_TripDiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9519CF6925A8D121001E5D89 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +165,8 @@
 				9519CF8B25A8D125001E5D89 /* TripDiaryTests */,
 				9519CF9625A8D125001E5D89 /* TripDiaryUITests */,
 				9519CF7325A8D122001E5D89 /* Products */,
+				02D0EF109FE1F06B70A7A90F /* Pods */,
+				46A83A474C41A77CE7369CEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,10 +183,11 @@
 		9519CF7425A8D122001E5D89 /* TripDiary */ = {
 			isa = PBXGroup;
 			children = (
-				954ABADE25AA0A33008AC129 /* Main */,
+				95E4D18B25ADDB1D00E6F237 /* Base */,
+				95E4D19925ADDF7600E6F237 /* Utility */,
 				954ABADD25AA0A24008AC129 /* App */,
+				954ABADE25AA0A33008AC129 /* Main */,
 				954ABADC25AA0A17008AC129 /* Resource */,
-				9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */,
 				9519CF8325A8D125001E5D89 /* Info.plist */,
 			);
 			path = TripDiary;
@@ -151,6 +216,7 @@
 			children = (
 				95E4D16825AAADDF00E6F237 /* Font */,
 				9519CF7E25A8D125001E5D89 /* Assets.xcassets */,
+				95E4D1A925ADEC0900E6F237 /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -160,6 +226,7 @@
 			children = (
 				9519CF7525A8D122001E5D89 /* AppDelegate.swift */,
 				9519CF7725A8D122001E5D89 /* SceneDelegate.swift */,
+				9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -167,12 +234,25 @@
 		954ABADE25AA0A33008AC129 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9580AC6625B34A81006035A9 /* Presentation */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9580AC6625B34A81006035A9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D1B125AED40D00E6F237 /* SubViews */,
 				9519CF7925A8D122001E5D89 /* MainViewController.swift */,
 				9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */,
 				95CB233225AAA698008FDB6B /* LogInViewController.swift */,
 				95CB233A25AAA6A0008FDB6B /* LogInViewController.storyboard */,
+				9580AC5225B34A44006035A9 /* SignInViewController.swift */,
+				9580AC5725B34A4D006035A9 /* SignInViewController.storyboard */,
+				9580AC5C25B34A62006035A9 /* FindPasswordViewController.swift */,
+				9580AC6125B34A6A006035A9 /* FindPasswordViewController.storyboard */,
 			);
-			path = Main;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		95E4D16825AAADDF00E6F237 /* Font */ = {
@@ -190,6 +270,50 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		95E4D18B25ADDB1D00E6F237 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D18C25ADDB3600E6F237 /* UIImage+asset.swift */,
+				95E4D19425ADDBF500E6F237 /* TripDiary+Bundle.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		95E4D19925ADDF7600E6F237 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D1A025ADEB4100E6F237 /* Color */,
+				95E4D19A25ADDF7D00E6F237 /* Protocol */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		95E4D19A25ADDF7D00E6F237 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D19B25ADDFCF00E6F237 /* StoryboardInstantiable.swift */,
+				9580AC4D25AF0BCA006035A9 /* InstantiableFromNib.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		95E4D1A025ADEB4100E6F237 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D1A125ADEB4C00E6F237 /* Color+named.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		95E4D1B125AED40D00E6F237 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */,
+				95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9519CF9C25A8D125001E5D89 /* Build configuration list for PBXNativeTarget "TripDiary" */;
 			buildPhases = (
+				545D41D1008A01C058794228 /* [CP] Check Pods Manifest.lock */,
 				9519CF6E25A8D121001E5D89 /* Sources */,
 				9519CF6F25A8D121001E5D89 /* Frameworks */,
 				9519CF7025A8D121001E5D89 /* Resources */,
+				4DCD7A9244D527BF8FDD44F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9519CF9F25A8D125001E5D89 /* Build configuration list for PBXNativeTarget "TripDiaryTests" */;
 			buildPhases = (
+				544B15152ABA49A1F99354BA /* [CP] Check Pods Manifest.lock */,
 				9519CF8425A8D125001E5D89 /* Sources */,
 				9519CF8525A8D125001E5D89 /* Frameworks */,
 				9519CF8625A8D125001E5D89 /* Resources */,
@@ -232,9 +359,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9519CFA225A8D125001E5D89 /* Build configuration list for PBXNativeTarget "TripDiaryUITests" */;
 			buildPhases = (
+				B7E9C296122D98A981B5A7D3 /* [CP] Check Pods Manifest.lock */,
 				9519CF8F25A8D125001E5D89 /* Sources */,
 				9519CF9025A8D125001E5D89 /* Frameworks */,
 				9519CF9125A8D125001E5D89 /* Resources */,
+				B014BFEC380FC3881DEAC334 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,16 +424,20 @@
 			files = (
 				9519CF8225A8D125001E5D89 /* LaunchScreen.storyboard in Resources */,
 				95CB233B25AAA6A0008FDB6B /* LogInViewController.storyboard in Resources */,
+				95E4D1AA25ADEC0900E6F237 /* Colors.xcassets in Resources */,
 				9519CF7F25A8D125001E5D89 /* Assets.xcassets in Resources */,
 				95E4D17525AAAE3700E6F237 /* NanumGothicBold.ttf in Resources */,
 				95E4D18325AAAE3F00E6F237 /* NanumSquare_acEB.ttf in Resources */,
+				9580AC5825B34A4D006035A9 /* SignInViewController.storyboard in Resources */,
 				95E4D18225AAAE3F00E6F237 /* NanumSquare_acB.ttf in Resources */,
 				95E4D18425AAAE3F00E6F237 /* NanumSquare_acL.ttf in Resources */,
+				95E4D1BB25AED46000E6F237 /* LogInTextFieldView.xib in Resources */,
 				9519CF7D25A8D122001E5D89 /* MainViewController.storyboard in Resources */,
 				95E4D17D25AAAE3C00E6F237 /* NanumGothicLight.ttf in Resources */,
 				95E4D18125AAAE3F00E6F237 /* NanumSquare_acR.ttf in Resources */,
 				95E4D17925AAAE3A00E6F237 /* NanumGothicExtraBold.ttf in Resources */,
 				95E4D17125AAAE3200E6F237 /* NanumGothic.ttf in Resources */,
+				9580AC6225B34A6A006035A9 /* FindPasswordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,14 +457,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DCD7A9244D527BF8FDD44F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		544B15152ABA49A1F99354BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545D41D1008A01C058794228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B014BFEC380FC3881DEAC334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary-TripDiaryUITests/Pods-TripDiary-TripDiaryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary-TripDiaryUITests/Pods-TripDiary-TripDiaryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripDiary-TripDiaryUITests/Pods-TripDiary-TripDiaryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E9C296122D98A981B5A7D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiary-TripDiaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9519CF6E25A8D121001E5D89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9580AC5325B34A44006035A9 /* SignInViewController.swift in Sources */,
 				95CB233325AAA698008FDB6B /* LogInViewController.swift in Sources */,
 				9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */,
+				95E4D1B325AED45100E6F237 /* LogInTextFieldView.swift in Sources */,
+				9580AC5D25B34A62006035A9 /* FindPasswordViewController.swift in Sources */,
+				9580AC4E25AF0BCA006035A9 /* InstantiableFromNib.swift in Sources */,
+				95E4D19525ADDBF500E6F237 /* TripDiary+Bundle.swift in Sources */,
+				95E4D1A225ADEB4C00E6F237 /* Color+named.swift in Sources */,
 				9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */,
+				95E4D19C25ADDFCF00E6F237 /* StoryboardInstantiable.swift in Sources */,
+				95E4D18D25ADDB3600E6F237 /* UIImage+asset.swift in Sources */,
 				9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +749,7 @@
 		};
 		9519CF9D25A8D125001E5D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10772474093C69AE5214908 /* Pods-TripDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,6 +768,7 @@
 		};
 		9519CF9E25A8D125001E5D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CE558479498045901CE44C /* Pods-TripDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -541,6 +787,7 @@
 		};
 		9519CFA025A8D125001E5D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393281B81D67C1102F6C4D49 /* Pods-TripDiaryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +809,7 @@
 		};
 		9519CFA125A8D125001E5D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EFA6C49EE4F4138C69807FF /* Pods-TripDiaryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +831,7 @@
 		};
 		9519CFA325A8D125001E5D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351A19EDB6222E5ADA37B682 /* Pods-TripDiary-TripDiaryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +851,7 @@
 		};
 		9519CFA425A8D125001E5D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C376C020B3C481003BDA29B /* Pods-TripDiary-TripDiaryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
