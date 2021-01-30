@@ -32,7 +32,7 @@ extension FindPasswordViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.navigationBar.isHidden = false
+        resetUI()
     }
 }
 
@@ -49,6 +49,11 @@ extension FindPasswordViewController {
 
 // MARK: - Set up UI
 extension FindPasswordViewController {
+    private func resetUI() {
+        self.navigationController?.navigationBar.isHidden = false
+        idTextFieldView.reset()
+    }
+    
     private func addTapGesture() {
         let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         self.view.addGestureRecognizer(tapGesture)

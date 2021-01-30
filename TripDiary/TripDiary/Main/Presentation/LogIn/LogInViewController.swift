@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import ReactorKit
 
 class LogInViewController: UIViewController, StoryboardInstantiable {
     @IBOutlet private weak var stackView: UIStackView!
@@ -18,6 +19,11 @@ class LogInViewController: UIViewController, StoryboardInstantiable {
     private var passwordTextFieldView = LogInTextFieldView.instanceFromNib!
     
     public var disposeBag = DisposeBag()
+    public var completionCallback: ((CompletionType) -> Void)?
+    
+    public enum CompletionType {
+        case loginComplete
+    }
 }
 
 // MARK: - ViewController Life Cycle
@@ -29,15 +35,38 @@ extension LogInViewController {
         setupNavigationBar()
         bindInit()
         addTapGesture()
+        
+        if reactor == nil {
+            reactor = LogInReactor()
+        }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
-        self.navigationController?.navigationBar.isHidden = false
+        resetUI()
     }
 }
 
+// MARK: - ReactorKit
+extension LogInViewController: StoryboardView {
+    typealias Reactor = LogInReactor
+    
+    func bind(reactor: LogInReactor) {
+        reactor.state.map { $0.event }
+            .subscribe(onNext: { [weak self] in
+                switch $0 {
+                case .loggedIn:
+                    print("===> Success Log In.")
+                    self?.completionCallback?(.loginComplete)
+                case .apiError:
+                    print("===> API Error.")
+                case .nothing:
+                    print("===> Nothing.")
+                }
+            }).disposed(by: disposeBag)
+    }
+}
 
 // MARK: - Binding
 extension LogInViewController {
@@ -56,6 +85,12 @@ extension LogInViewController {
 
 // MARK: - Set up UI
 extension LogInViewController {
+    private func resetUI() {
+        self.navigationController?.navigationBar.isHidden = false
+        loginTextFieldView.reset()
+        passwordTextFieldView.reset()
+    }
+    
     private func addTapGesture() {
         let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         self.view.addGestureRecognizer(tapGesture)
@@ -111,6 +146,7 @@ extension LogInViewController {
         if loginId.isEmpty || password.isEmpty { return }
         
         // Todo: Action event - login
+        reactor?.action.onNext(.signInUser(id: loginId, password: password))
     }
     
     @objc private func findPasswordButtonTouched(_ sender: UIButton) {

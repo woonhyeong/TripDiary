@@ -103,4 +103,10 @@ extension LogInTextFieldView {
     public override class func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    public func reset() {
+        state = .normal
+        textField.text = nil
+        textField.resignFirstResponder()
+    }
 }

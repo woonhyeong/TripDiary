@@ -7,27 +7,75 @@
 
 import UIKit
 
-@main
+@objcMembers
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        sleep(3)
+        
+        sleep(3)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        
+        let mainViewController = MainViewController.instantiate()
+        mainViewController.logInViewController = getLogInViewController()
+        
+        window?.rootViewController = UINavigationController(rootViewController: mainViewController)
+        window?.makeKeyAndVisible()
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
 
+extension AppDelegate {
+    private func getLogInViewController() -> LogInViewController {
+        let logInViewController = LogInViewController.instantiate()
+        logInViewController.completionCallback = { [weak self] (completionType) in
+            switch completionType {
+            case .loginComplete:
+                // Todo: show TabBarController
+                print("Should show tabBar")
+                self?.showMainTabBarController()
+            }
+        }
+        
+        return logInViewController
+    }
+    
+    private func showMainTabBarController() {
+        let view = getLogInViewController()
+        window?.switchRootViewController(to: view,
+                                         animated: true,
+                                         duration: 0.3,
+                                         options: .transitionCrossDissolve,
+                                         nil)
+    }
+}
+
+// MARK: - UIWindow Extensions
+extension UIWindow {
+    func switchRootViewController(to viewController: UIViewController,
+                                  animated: Bool = true,
+                                  duration: TimeInterval = 0.5,
+                                  options: UIView.AnimationOptions = .transitionFlipFromRight,
+                                  _ completion: (() -> Void)? = nil) {
+        
+        guard animated else {
+            rootViewController = viewController
+            completion?()
+            return
+        }
+        
+        UIView.transition(with: self, duration: duration, options: options, animations: {
+            let oldState = UIView.areAnimationsEnabled
+            UIView.setAnimationsEnabled(false)
+            self.rootViewController = viewController
+            UIView.setAnimationsEnabled(oldState)
+        }, completion: { _ in
+            completion?()
+        })
+    }
+}

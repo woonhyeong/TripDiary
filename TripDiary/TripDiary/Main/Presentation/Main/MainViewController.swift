@@ -7,10 +7,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, StoryboardInstantiable {
     // MARK: - UI Properties
     @IBOutlet private weak var logInButton: UIButton!
     @IBOutlet private weak var signUpButton: UIButton!
+    
+    public var logInViewController: UIViewController?
     
     // MARK: - ViewController Life Cycle
     override func viewDidLoad() {
@@ -27,7 +29,7 @@ class MainViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func logInButtonTouched(_ sender: Any) {
-        self.navigationController?.pushViewController(LogInViewController.instantiate(), animated: true)
+        self.navigationController?.pushViewController(logInViewController ?? LogInViewController.instantiate(), animated: true)
     }
     
     @IBAction func signUpButtonTouched(_ sender: Any) {

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7053D6AA8CE4872E7CDCAE14 /* Pods_TripDiary_TripDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6D1D5F4F8BFF2E1322F3A /* Pods_TripDiary_TripDiaryUITests.framework */; };
 		9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7525A8D122001E5D89 /* AppDelegate.swift */; };
-		9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7725A8D122001E5D89 /* SceneDelegate.swift */; };
 		9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9519CF7925A8D122001E5D89 /* MainViewController.swift */; };
 		9519CF7D25A8D122001E5D89 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF7B25A8D122001E5D89 /* MainViewController.storyboard */; };
 		9519CF7F25A8D125001E5D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9519CF7E25A8D125001E5D89 /* Assets.xcassets */; };
@@ -40,6 +39,15 @@
 		95E4D1AA25ADEC0900E6F237 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D1A925ADEC0900E6F237 /* Colors.xcassets */; };
 		95E4D1B325AED45100E6F237 /* LogInTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */; };
 		95E4D1BB25AED46000E6F237 /* LogInTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */; };
+		95FAC3EC25C05CC3007B31D3 /* LogInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC3EB25C05CC3007B31D3 /* LogInRepository.swift */; };
+		95FAC3F525C05DFC007B31D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC3F425C05DFC007B31D3 /* User.swift */; };
+		95FAC3FB25C05EB1007B31D3 /* DefaultLogInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC3FA25C05EB1007B31D3 /* DefaultLogInRepository.swift */; };
+		95FAC40425C06113007B31D3 /* apiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC40325C06113007B31D3 /* apiService.swift */; };
+		95FAC40A25C0667F007B31D3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC40925C0667F007B31D3 /* HTTPMethod.swift */; };
+		95FAC41325C16194007B31D3 /* LogInDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC41225C16194007B31D3 /* LogInDataSource.swift */; };
+		95FAC41A25C5AE37007B31D3 /* LogInDataSource+Implement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC41925C5AE37007B31D3 /* LogInDataSource+Implement.swift */; };
+		95FAC42225C5C270007B31D3 /* LogInAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC42125C5C270007B31D3 /* LogInAPIService.swift */; };
+		95FAC42725C5C2FD007B31D3 /* Flim+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FAC42625C5C2FD007B31D3 /* Flim+Response.swift */; };
 		E35BE82A57D2AB53FAE31FB2 /* Pods_TripDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2BFB35206D58385F62735E /* Pods_TripDiaryTests.framework */; };
 		EA5C7F78BCCE2D874F5E9830 /* Pods_TripDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A9456E4E38FEBD1B01410 /* Pods_TripDiary.framework */; };
 /* End PBXBuildFile section */
@@ -70,7 +78,6 @@
 		7EFA6C49EE4F4138C69807FF /* Pods-TripDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-TripDiaryTests/Pods-TripDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		9519CF7225A8D122001E5D89 /* TripDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9519CF7525A8D122001E5D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9519CF7725A8D122001E5D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9519CF7925A8D122001E5D89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9519CF7C25A8D122001E5D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		9519CF7E25A8D125001E5D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +113,15 @@
 		95E4D1A925ADEC0900E6F237 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		95E4D1B225AED45100E6F237 /* LogInTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTextFieldView.swift; sourceTree = "<group>"; };
 		95E4D1BA25AED46000E6F237 /* LogInTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInTextFieldView.xib; sourceTree = "<group>"; };
+		95FAC3EB25C05CC3007B31D3 /* LogInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRepository.swift; sourceTree = "<group>"; };
+		95FAC3F425C05DFC007B31D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95FAC3FA25C05EB1007B31D3 /* DefaultLogInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLogInRepository.swift; sourceTree = "<group>"; };
+		95FAC40325C06113007B31D3 /* apiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiService.swift; sourceTree = "<group>"; };
+		95FAC40925C0667F007B31D3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		95FAC41225C16194007B31D3 /* LogInDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInDataSource.swift; sourceTree = "<group>"; };
+		95FAC41925C5AE37007B31D3 /* LogInDataSource+Implement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInDataSource+Implement.swift"; sourceTree = "<group>"; };
+		95FAC42125C5C270007B31D3 /* LogInAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInAPIService.swift; sourceTree = "<group>"; };
+		95FAC42625C5C2FD007B31D3 /* Flim+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flim+Response.swift"; sourceTree = "<group>"; };
 		9D3A9456E4E38FEBD1B01410 /* Pods_TripDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10772474093C69AE5214908 /* Pods-TripDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary.debug.xcconfig"; path = "Target Support Files/Pods-TripDiary/Pods-TripDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		F6C6D1D5F4F8BFF2E1322F3A /* Pods_TripDiary_TripDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiary_TripDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				9519CF7525A8D122001E5D89 /* AppDelegate.swift */,
-				9519CF7725A8D122001E5D89 /* SceneDelegate.swift */,
 				9519CF8025A8D125001E5D89 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -238,7 +253,9 @@
 		954ABADE25AA0A33008AC129 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				95F4667D25B3DA3B009832E9 /* Entity */,
+				95FAC40225C06103007B31D3 /* Networking */,
+				95FAC3C525BF1BB2007B31D3 /* Domain */,
+				95FAC3BB25BF1B2B007B31D3 /* Data */,
 				9580AC6625B34A81006035A9 /* Presentation */,
 			);
 			path = Main;
@@ -352,12 +369,75 @@
 			path = FindPassword;
 			sourceTree = "<group>";
 		};
-		95F4667D25B3DA3B009832E9 /* Entity */ = {
+		95FAC3BB25BF1B2B007B31D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC3C625BF1BBC007B31D3 /* Model */,
+				95FAC41725C5ADCC007B31D3 /* DataSource */,
+				95FAC3C425BF1BAC007B31D3 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		95FAC3C425BF1BAC007B31D3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC3FA25C05EB1007B31D3 /* DefaultLogInRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		95FAC3C525BF1BB2007B31D3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC3F325C05DF4007B31D3 /* Entity */,
+				95FAC3F925C05E78007B31D3 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		95FAC3C625BF1BBC007B31D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9522DCFC25B3EAB700EF30F9 /* User+Response.swift */,
+				95FAC42625C5C2FD007B31D3 /* Flim+Response.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95FAC3F325C05DF4007B31D3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC3F425C05DFC007B31D3 /* User.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		95FAC3F925C05E78007B31D3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC3EB25C05CC3007B31D3 /* LogInRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		95FAC40225C06103007B31D3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC40325C06113007B31D3 /* apiService.swift */,
+				95FAC40925C0667F007B31D3 /* HTTPMethod.swift */,
+				95FAC42125C5C270007B31D3 /* LogInAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		95FAC41725C5ADCC007B31D3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				95FAC41225C16194007B31D3 /* LogInDataSource.swift */,
+				95FAC41925C5AE37007B31D3 /* LogInDataSource+Implement.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,20 +691,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95FAC41325C16194007B31D3 /* LogInDataSource.swift in Sources */,
+				95FAC40A25C0667F007B31D3 /* HTTPMethod.swift in Sources */,
+				95FAC42225C5C270007B31D3 /* LogInAPIService.swift in Sources */,
+				95FAC40425C06113007B31D3 /* apiService.swift in Sources */,
+				95FAC3FB25C05EB1007B31D3 /* DefaultLogInRepository.swift in Sources */,
 				9580AC5325B34A44006035A9 /* SignInViewController.swift in Sources */,
 				95CB233325AAA698008FDB6B /* LogInViewController.swift in Sources */,
 				9522DCF825B3E9CC00EF30F9 /* LogInReactor.swift in Sources */,
 				9519CF7A25A8D122001E5D89 /* MainViewController.swift in Sources */,
+				95FAC3F525C05DFC007B31D3 /* User.swift in Sources */,
 				95E4D1B325AED45100E6F237 /* LogInTextFieldView.swift in Sources */,
 				9580AC5D25B34A62006035A9 /* FindPasswordViewController.swift in Sources */,
 				9522DCFD25B3EAB700EF30F9 /* User+Response.swift in Sources */,
 				9580AC4E25AF0BCA006035A9 /* InstantiableFromNib.swift in Sources */,
 				95E4D19525ADDBF500E6F237 /* TripDiary+Bundle.swift in Sources */,
+				95FAC3EC25C05CC3007B31D3 /* LogInRepository.swift in Sources */,
+				95FAC41A25C5AE37007B31D3 /* LogInDataSource+Implement.swift in Sources */,
 				95E4D1A225ADEB4C00E6F237 /* Color+named.swift in Sources */,
 				9519CF7625A8D122001E5D89 /* AppDelegate.swift in Sources */,
 				95E4D19C25ADDFCF00E6F237 /* StoryboardInstantiable.swift in Sources */,
 				95E4D18D25ADDB3600E6F237 /* UIImage+asset.swift in Sources */,
-				9519CF7825A8D122001E5D89 /* SceneDelegate.swift in Sources */,
+				95FAC42725C5C2FD007B31D3 /* Flim+Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
